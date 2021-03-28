@@ -1,0 +1,23 @@
+-----------install required packages-------------
+ yum install epel-release # packages repository
+ yum install ansible
+ 
+ ------------------------------------------------------
+ ansible --version        # to check Ansible version
+ 
+sudo su 
+cd 
+ssh-keygen 
+cd .ssh 
+cat id_rsa.pub 
+-------- copy public key in client---------------
+ssh to the client machine
+sudo su
+cd .ssh 
+vi authorized_keys 
+paste anssrv publickey
+chmod 600 authorized_keys
+---------------------------
+
+To login from server onto client
+From the server machine : ssh your_username@host_ip_address
